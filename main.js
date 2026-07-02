@@ -20,25 +20,14 @@ const navLinks = document.getElementById('navLinks');
 
 navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
-  const spans = navToggle.querySelectorAll('span');
-  if (navLinks.classList.contains('active')) {
-    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-    spans[1].style.opacity = '0';
-    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-  } else {
-    spans[0].style.transform = '';
-    spans[1].style.opacity = '';
-    spans[2].style.transform = '';
-  }
+  navToggle.classList.toggle('active');
 });
 
+// Close menu on link click
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('active');
-    const spans = navToggle.querySelectorAll('span');
-    spans[0].style.transform = '';
-    spans[1].style.opacity = '';
-    spans[2].style.transform = '';
+    navToggle.classList.remove('active');
   });
 });
 
