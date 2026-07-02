@@ -65,18 +65,25 @@ section { padding: 100px 0; }
 /* Logo — always visible, moves to center on scroll */
 .nav-logo {
   --scroll-progress: 0;
-  display: flex; align-items: center; gap: 12px; text-decoration: none;
+  display: flex; align-items: center; text-decoration: none;
+  gap: calc(12px * (1 - var(--scroll-progress)));
   position: absolute;
   left: calc(24px + (50% - 24px) * var(--scroll-progress));
   top: 50%;
-  transform: translate(calc(-50% * var(--scroll-progress)), -50%);
+  transform: translate(calc(-50% * var(--scroll-progress)), -50%) scale(calc(1 - 0.3 * var(--scroll-progress)));
   /* Added transition for smooth momentum effect when scrolling stops */
-  transition: left 0.4s cubic-bezier(0.25, 1, 0.5, 1), transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .nav-logo img { height: 36px; width: auto; filter: brightness(0) invert(1); }
 .nav-logo span {
   font-family: var(--font-display); font-weight: 700; font-size: 1.1rem;
   color: var(--text-primary); letter-spacing: 3px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: calc(1 - (var(--scroll-progress) * 1.5)); /* fades out a bit faster */
+  max-width: calc(150px * (1 - var(--scroll-progress)));
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* Hamburger toggle — always visible */
