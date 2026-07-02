@@ -3,13 +3,18 @@
 // ══════════════════════════════════════
 const navbar = document.getElementById('navbar');
 const hero = document.getElementById('hero');
+const navLogo = document.getElementById('navLogo');
 
 function updateNavbar() {
   const heroBottom = hero.offsetTop + hero.offsetHeight;
   const scrolled = window.scrollY > heroBottom - 100;
   navbar.classList.toggle('scrolled', scrolled);
+  
+  // Calculate scroll progress (0 at top, 1 when scrolled past hero)
+  const progress = Math.min(Math.max(window.scrollY / heroBottom, 0), 1);
+  navLogo.style.setProperty('--scroll-progress', progress);
 }
-window.addEventListener('scroll', updateNavbar);
+window.addEventListener('scroll', updateNavbar, { passive: true });
 updateNavbar();
 
 // ══════════════════

@@ -64,16 +64,13 @@ section { padding: 100px 0; }
 
 /* Logo — always visible, moves to center on scroll */
 .nav-logo {
+  --scroll-progress: 0;
   display: flex; align-items: center; gap: 12px; text-decoration: none;
   position: absolute;
-  left: 24px; /* Aligned with container padding */
+  left: calc(24px + (50% - 24px) * var(--scroll-progress));
   top: 50%;
-  transform: translateY(-50%);
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.navbar.scrolled .nav-logo {
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(calc(-50% * var(--scroll-progress)), -50%);
+  /* Removed transition to follow scroll perfectly */
 }
 .nav-logo img { height: 36px; width: auto; filter: brightness(0) invert(1); }
 .nav-logo span {
