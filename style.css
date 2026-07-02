@@ -70,7 +70,8 @@ section { padding: 100px 0; }
   left: calc(24px + (50% - 24px) * var(--scroll-progress));
   top: 50%;
   transform: translate(calc(-50% * var(--scroll-progress)), -50%);
-  /* Removed transition to follow scroll perfectly */
+  /* Added transition for smooth momentum effect when scrolling stops */
+  transition: left 0.4s cubic-bezier(0.25, 1, 0.5, 1), transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .nav-logo img { height: 36px; width: auto; filter: brightness(0) invert(1); }
 .nav-logo span {
