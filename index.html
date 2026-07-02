@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TİMUR — İnsansız Kara Aracı</title>
+  <meta name="description" content="TİMUR otonom insansız kara aracı. Teknofest yarışması için geliştirilen yüksek performanslı UGV platformu.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/images/timur-logo.jpeg" type="image/jpeg">
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <img src="assets/images/timur-logo.jpeg" alt="TİMUR Logo">
+        <span>TİMUR</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Hakkında</a></li>
+        <li><a href="#tech">Teknoloji</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#team">Ekip</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Teknofest 2026
+      </div>
+      <h1>
+        <span class="accent">TİMUR</span><br>
+        İnsansız Kara Aracı
+      </h1>
+      <p>Otonom navigasyon ve yapay zekâ ile donatılmış yeni nesil insansız kara aracı platformu.</p>
+      <a href="#about" class="hero-cta">
+        Keşfet
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="line"></div>
+      AŞAĞI KAYDIR
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-image-placeholder" id="aboutImage">
+            <!-- BURAYA ARAÇ FOTOĞRAFI EKLENECEK -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Araç Fotoğrafı Eklenecek</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <div class="section-label">Proje Hakkında</div>
+          <h3>Geleceğin Otonom<br>Kara Aracı</h3>
+          <p>TİMUR, Teknofest İnsansız Kara Araçları yarışması için tasarlanan ve geliştirilen otonom bir platformdur. LiDAR, stereoskopik kamera ve yapay zekâ tabanlı algılama sistemleriyle donatılmıştır.</p>
+          <p>Reaktif navigasyon algoritmaları sayesinde engelleri gerçek zamanlı olarak tespit eder ve otonom parkur tamamlama yeteneğine sahiptir.</p>
+        </div>
+      </div>
+
+      <!-- Specs -->
+      <div class="specs-grid">
+        <div class="spec-card reveal">
+          <div class="spec-value">70<span style="font-size:1rem">kg</span></div>
+          <div class="spec-label">Araç Ağırlığı</div>
+        </div>
+        <div class="spec-card reveal">
+          <div class="spec-value">360°</div>
+          <div class="spec-label">LiDAR Görüş Açısı</div>
+        </div>
+        <div class="spec-card reveal">
+          <div class="spec-value">ROS2</div>
+          <div class="spec-label">Yazılım Altyapısı</div>
+        </div>
+        <div class="spec-card reveal">
+          <div class="spec-value">AI</div>
+          <div class="spec-label">Otonom Navigasyon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TECH ═══ -->
+  <section id="tech">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Teknoloji</div>
+        <h2 class="section-title">Teknik Altyapı</h2>
+        <p class="section-desc">TİMUR'un otonom yeteneklerini sağlayan teknoloji yığını.</p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card reveal">
+          <div class="tech-icon">📡</div>
+          <h4>RPLiDAR S1</h4>
+          <p>360° çevresel tarama ile gerçek zamanlı engel tespiti ve mesafe ölçümü.</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-icon">👁️</div>
+          <h4>ZED 2i Stereo Kamera</h4>
+          <p>Derinlik algılama ve 3D ortam haritalama için stereoskopik görüntüleme.</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-icon">🧠</div>
+          <h4>YOLOv8 Algılama</h4>
+          <p>Trafik işaretleri ve yol elemanlarının gerçek zamanlı tespiti.</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-icon">🤖</div>
+          <h4>ROS 2 Humble</h4>
+          <p>Robot işletim sistemi üzerinde modüler ve güvenilir yazılım mimarisi.</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-icon">🗺️</div>
+          <h4>Reaktif Navigasyon</h4>
+          <p>Follow-the-Gap algoritması ile hızlı ve güvenli otonom sürüş.</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-icon">⚡</div>
+          <h4>Gazebo Simülasyon</h4>
+          <p>Gerçekçi fizik motoru ile sanal ortamda kapsamlı test ve doğrulama.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALLERY ═══ -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Galeri</div>
+        <h2 class="section-title">Görüntüler</h2>
+        <p class="section-desc">TİMUR'un geliştirme sürecinden ve testlerinden kareler.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item featured reveal" id="gallery1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Ana Görsel — 1200×750</span>
+        </div>
+        <div class="gallery-item reveal" id="gallery2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Görsel 2</span>
+        </div>
+        <div class="gallery-item reveal" id="gallery3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Görsel 3</span>
+        </div>
+        <div class="gallery-item reveal" id="gallery4">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Görsel 4</span>
+        </div>
+        <div class="gallery-item reveal" id="gallery5">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Görsel 5</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TEAM ═══ -->
+  <section id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Ekibimiz</div>
+        <h2 class="section-title">Arkasındaki Ekip</h2>
+        <p class="section-desc">TİMUR'u hayata geçiren mühendislik ekibi.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar"><span>Fotoğraf</span></div>
+          <h4>İsim Soyisim</h4>
+          <div class="role">Takım Kaptanı</div>
+          <div class="dept">Yazılım</div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar"><span>Fotoğraf</span></div>
+          <h4>İsim Soyisim</h4>
+          <div class="role">Mekanik Tasarım</div>
+          <div class="dept">Mekanik</div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar"><span>Fotoğraf</span></div>
+          <h4>İsim Soyisim</h4>
+          <div class="role">Elektronik</div>
+          <div class="dept">Donanım</div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar"><span>Fotoğraf</span></div>
+          <h4>İsim Soyisim</h4>
+          <div class="role">Yazılım Geliştirici</div>
+          <div class="dept">Otonom Sistemler</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">İletişim</div>
+        <h2 class="section-title">Bize Ulaşın</h2>
+        <p class="section-desc">Proje detayları ve iş birliği için iletişime geçin.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>E-Posta</h4>
+              <a href="mailto:info@timur-ugv.com">info@timur-ugv.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Konum</h4>
+              <p>Türkiye</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="#">TİMUR UGV</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="#">github.com/timur-ugv</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" onsubmit="return false;">
+          <div class="form-row">
+            <input type="text" placeholder="Adınız" required>
+            <input type="email" placeholder="E-Posta" required>
+          </div>
+          <input type="text" placeholder="Konu">
+          <textarea placeholder="Mesajınız" rows="5" required></textarea>
+          <button type="submit" class="btn-submit">Gönder</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/images/timur-logo.jpeg" alt="TİMUR">
+        <span>TİMUR</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">Hakkında</a>
+        <a href="#tech">Teknoloji</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#team">Ekip</a>
+        <a href="#contact">İletişim</a>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+      <p>© 2026 TİMUR — İnsansız Kara Aracı. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
